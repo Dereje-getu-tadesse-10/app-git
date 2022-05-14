@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style: none;
+    font-family: 'Space Mono';
+}
+
+// White mode
+$Blue : #0079FF;
+$Placeholder : #697c9a;
+$logo : #4b6a9b;
+$text : #2b3442;
+$fond : #f6f8ff;
+$Container : #fefefe;
+
+// Dark mode 
+$containerDark : #141d2f;
+$PrincipalContainer : #1e24a7;
+
+.dark-mode{
+    $containerDark : #141d2f;
+    $PrincipalContainer : #1e24a7;
+}
+
+body{
+    background: $fond;
+}
+
+main{
+    margin: 10% auto;
+    width:90%;
+    & header{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & #dark{
+                padding-right:10px;
+            }
+        }
+    }
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Container;
+    height: 69px;
+    border-radius:15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    & .inpContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:94%;
+    }
+
+    & input[type="text"]{
+        width: 38%;
+        border:none;
+        outline:none;
+        margin-left: 3px;
+    }
+
+    & input[type="button"]{
+        width: 90px;
+        height:50px;
+        border-radius: 10px;
+        background-color: $Blue;
+        color:#ffffff;
+        border:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+    }
+
+    & #erorr{
+        opacity: 0;
+        font-size: .8em;
+        padding-left: 2px;
+    }
+
+}
+
+// style de tout le container gris
+
+.container-user-info{
+    margin: 10% auto;
+    height: 517px;
+    background-color: $Container;
+    border-radius:15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    & .profile{
+        padding: 1.5em;
+        margin: auto;
+        // padding:20px;
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+    & img{
+        height: 70px;
+        width: 70px;
+        border-radius:999%;
+    }
+
+    & .infoUsername{
+        padding-left: 2rem;
+        font-size: .8rem;
+    }
+
+    & .bio{
+        margin: auto;
+        font-size: .8rem;
+        width: 90%;
+    }
+    & #container-grey{
+        width: 90%;
+        height: 15%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7% auto;
+        background-color: $fond;
+        border-radius: 10px;
+    }
+    & .repos,
+      .followers,
+      .followings{
+        margin: auto;
+        text-align: center;
+      }
+}
+
+// debut du container de liens
+
+.end-container{
+    width: 90%;
+    margin:auto;
+
+    & img{
+        width:16px
+    }
+
+    & .position,
+      .lien,
+      .twitter,
+      .company{
+          margin:0;
+          padding:0;
+          height: 50px;
+          display: flex;
+          align-items: center;
+      }
+    & .position-user,
+      .lien-site-web,
+      .lien-twitter,
+      .lien-company{
+        padding-left: 1em;
+        cursor: pointer;
+    }
+
+}
+
+// Bold style
+
+.bold{
+    font-family: 'Space Mono';
+    font-weight: bold;
+}
+
+.gris{
+    color:#4B6A9B;
+    font-weight: regular;
+}
+
+.lien-github{
+    color:#0079FF;
+}
