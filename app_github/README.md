@@ -5,6 +5,6 @@
 
 Le but de ce projet est d'utiliser l'api de gitthub et d'avoir des informations sur l'utilisateur recherché dans la barre de recherche.
 
-![Lien projet V1](https://derejeg.promo-106.codeur.online/app-github/)
+[Lien projet V1](https://derejeg.promo-106.codeur.online/app-github/)
 
 ## ***Amelioration de l'interface utilisateur en cours*** 
